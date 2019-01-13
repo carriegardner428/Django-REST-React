@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+
 class Form extends Component {
   static propTypes = {
     endpoint: PropTypes.string.isRequired
   };
   state = {
-    name: {
-      placeholder: 'What is your name?',
-    },
+    name: "",
     email: "",
     message: ""
   };
